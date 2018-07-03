@@ -5,7 +5,7 @@ module.exports =
 class PlantUml
   constructor: () ->
   @writeAndOpenPng:(umlFilePath, pngFilePath) ->
-    command = 'plantuml'
+    command = 'plantuml.jar'
     args = ['-failfast2', umlFilePath]
     exit = (code) ->
       if PlantUml.isRegeneratedPng(pngFilePath, startTime)
